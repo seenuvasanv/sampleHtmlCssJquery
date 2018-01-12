@@ -1,0 +1,383 @@
+html, body {
+    height: 100%;
+}
+body {
+    font-family: Arial;
+    min-width: 780px;
+}
+body, ul {
+    margin: 0;
+}
+ul {
+    padding: 0;
+    display: inline-block;
+}
+li {
+    padding: 0 16px;
+}
+input::-webkit-input-placeholder {
+    color: #C1C1C1 !important;
+}    
+input:-moz-placeholder { /* Firefox 18- */
+    color: #C1C1C1 !important;  
+}    
+input::-moz-placeholder {  /* Firefox 19+ */
+    color: #C1C1C1 !important;  
+}    
+input:-ms-input-placeholder {  
+    color: #C1C1C1 !important;  
+}
+.marginT8 {
+    margin-top: 8px;
+}
+.padding08  {
+    padding: 0 8px;
+}
+img {
+    vertical-align: middle;
+}
+header {
+    background-color: #E6E7E8;
+    color: #ACA8AE;
+    padding: 8px;
+    font-size: 13px;
+}
+.flexBetween {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.upperCase {
+    text-transform: uppercase;
+}
+li {
+    display: inline-block;
+}
+.liSelected {
+    outline: 1px solid;
+    outline-offset: 8px;
+    padding: 0;
+    font-weight: bold;
+    color: #7F8284;
+    outline-color: #ACA8AE;
+}
+.menuHolder {
+    padding: 8px 16px;
+    cursor: pointer;
+}
+.paddingTB16 {
+    padding: 16px 0;
+}
+.rightOption {
+    align-self: center;
+    padding: 0 24px;
+}
+.rightOption > span {
+    cursor: pointer;
+}
+.leftOption {
+    padding: 8px 0;
+}
+.titleActivity {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px 8px 8px 8px;
+}
+#titleActivitySection {
+    background-color: #455E6F;
+    color: #A2C9CD;
+}
+.pageTitle {
+    font-size: 32px;
+}
+#addItem {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 24px;
+    cursor: pointer;
+}
+.addSymbol {
+    font-size: 24px;
+}
+.separator {
+    font-size: 0;
+    border-left: 1px solid #A2C9CD;
+    display: inline-block;
+    height: 20px;
+    vertical-align: middle;
+}
+.activeArchive {
+    font-size: 12px;
+    margin-top: 24px;
+    text-transform: uppercase;
+    text-align: right;
+}
+.activeArchive > span {
+    cursor: pointer;
+}
+.searchIcon {
+    font-size: 28px;
+    color: #A2C9CD;
+    width: 28px;
+}
+.searchWrapper {
+    padding: 0 8px 8px 8px;
+    border-bottom: 1px solid #A2C9CD;
+    text-transform: uppercase;
+    color: #ACA8AE;
+}
+.active {
+    color: #7F8284;
+}
+.topGradient {
+    height: 6px;
+    background-image: linear-gradient(to bottom, rgba(69, 94, 111, 0.3), rgba(230, 231, 232, 0.7));
+}
+.bottomGradient {
+    height: 6px;
+    background-image: linear-gradient(to bottom,rgba(230, 231, 232, 0.7), rgba(69, 94, 111, 0.3));
+}
+.searchInput {
+    background-color: #455e6f; 
+    border: 0; 
+    font-size: 16px;
+    color: #A2C9CD;
+}
+input.searchInput:focus {
+    outline: 0;
+}
+#dataSection {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 8px;
+    color: #768996;
+}
+.dataDescription {
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+#YuMetable {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 12px;
+}
+.YuMeTable-cell {
+    padding: 16px 8px;
+    box-sizing: border-box;
+}
+.priority.YuMeTable-cell,
+.status.YuMeTable-cell {
+    width: 6%;
+}
+.name.YuMeTable-cell,
+.revenue.YuMeTable-cell {
+    width: 14%;
+}
+.impressionsGoal.YuMeTable-cell,
+.complete.YuMeTable-cell,
+.impressions.YuMeTable-cell,
+.fillRate.YuMeTable-cell {
+    width: 10%;
+}
+.cpm.YuMeTable-cell {
+    width: 20%;
+    position: relative;
+}
+.title.YuMeTable-cell {
+    text-transform: uppercase;
+    padding: 16px 8px 8px 8px;
+    font-size: 11px;
+    border-bottom: 1px dotted #BEBEBE;
+}
+.YuMeTable-cell.even {
+    background-color: #F4F5F4;
+    border: 1px dotted #BEBEBE;
+    border-left: 0;
+    border-right: 0;
+}
+.progressBarHolder {
+    height: 8px;
+    background-color: #DDDDDD;
+    border-radius: 5px;
+    border: 2px solid #BEBEBE;
+}
+.progressBar {
+    width: 50%;
+    height: 100%;
+    background-color: #191919;
+    border-radius: 5px;
+}
+.impressionsGoal .progressBar {
+    background-color: #ED2C26;
+}
+.fa-clock-o {
+    color: #78D3DE;
+    font-size: 18px;
+    margin-top: 4px;
+}
+.fa-ellipsis-v {
+    position: absolute;
+    right: 16px;
+    top: 23px;
+}
+.YuMeTable-cell.content {
+    cursor: pointer;
+}
+.rowExpander {
+    overflow: hidden;
+    display: none;
+    position: relative;
+}
+.rowMarker {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #E6E7E8;
+    padding: 16px 8px 24px 8px;
+    box-shadow: inset 0 0 25px rgba(69, 94, 111, 0.5);
+    box-sizing: border-box;
+    text-transform: uppercase;
+    text-align: left;
+}
+.rowMarker > div {
+    width: 14%;
+}
+.expandTitle {
+    width: 100% !important;
+    color: #000;
+    font-size: 15px;
+    padding: 8px;
+    font-weight: bold;
+    order: 0;
+}
+.requests.YuMeExpand-cell,
+.responseRate.YuMeExpand-cell,
+.responses.YuMeExpand-cell,
+.impressions.YuMeExpand-cell,
+.impressionOrResponse.YuMeExpand-cell,
+.fillRate.YuMeExpand-cell,
+.averageCpm.YuMeExpand-cell {
+    order: 1;
+    border-bottom: 1px dotted #BEBEBE;
+    border-right: 1px dotted #BEBEBE;
+}
+.responses.YuMeExpand-cell {
+    order: 2;
+}
+.responseRate.YuMeExpand-cell {
+    order: 3;
+}
+.impressions.YuMeExpand-cell {
+    order: 4;
+}
+.impressionOrResponse.YuMeExpand-cell {
+    order: 5;
+}
+.fillRate.YuMeExpand-cell {
+    order: 6;
+}
+.averageCpm.YuMeExpand-cell {
+    order: 7;
+    border-right: 0;
+}
+.revenue.YuMeExpand-cell,
+.vcr.YuMeExpand-cell,
+.ctr.YuMeExpand-cell,
+.averageBid.YuMeExpand-cell,
+.averageBids.YuMeExpand-cell,
+.averageWinningBid.YuMeExpand-cell,
+.averagePremiumToFloor.YuMeExpand-cell {
+    order: 8;
+    border-right: 1px dotted #BEBEBE;
+}
+.vcr.YuMeExpand-cell {
+    order: 9;
+}
+.ctr.YuMeExpand-cell {
+    order: 10;
+}
+.averageBid.YuMeExpand-cell {
+    order: 11;
+}
+.averageBids.YuMeExpand-cell {
+    order: 12;
+}
+.averageWinningBid.YuMeExpand-cell {
+    order: 13;
+}
+.averagePremiumToFloor.YuMeExpand-cell {
+    order: 14;
+    border-right: 0;
+}
+.YuMeExpand-cell {
+    padding: 8px;
+    box-sizing: border-box;
+}
+.expandValue {
+    font-size: 18px;
+    color: #78D3DE;
+}
+.expandLabel {
+    margin-top: 4px;
+}
+.actionBar {
+    position: absolute;
+    width: 10%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+.actionBarEdit {
+    height: 25%;
+}
+.actionBarClone {
+    height: 25%;
+}
+.actionBarCancel {
+    height: 50%;
+}
+.actionBar > div {
+    position: relative;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 14px;
+    background-color: #374B5B;
+    border-bottom: 1px dotted #BEBEBE;
+    color: #E6E7E8;
+    cursor: default;
+}
+.actionBar span {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    padding-left: 8px;
+}
+.actionBarCancel > span.fa.fa-close {
+    transform: translate(-50%, -50%);
+    left: 50%;
+    padding-left: 0;
+    font-size: 50px;
+    cursor: pointer;
+}
+.actionBarCancel {
+    background-color: #768996 !important;
+    border-bottom: 0 !important;
+}
+@media screen and (max-width: 768px) {
+    ul {
+        display: block;
+        text-align: right;
+    }
+    .rightOption {
+        width: 100%;
+        text-align: right;
+    }
+    .leftOption {
+        width: 100%;
+    }
+}

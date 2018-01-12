@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>YuMe</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <link rel="stylesheet" href="styles.css" />
+    <script src="data.js"></script>
+    <script src="library/jquery.js"></script>
+    <script src="events.js"></script>
+</head>
+<body>
+    <header>
+        <div class="flexBetween upperCase">
+            <div class="leftOption">
+                <img src="img/logo.png" alt="YuMe" width=80>
+                <ul class="menuHolder">
+                    <li>zones</li>
+                    <li class="liSelected">deals</li>
+                    <li>reports</li>
+                </ul>
+            </div>
+            <div class="rightOption">
+                <span class="padding08">accuen / family circle</span>|
+                <span class="padding08">anne hathaway</span>
+            </div>
+        </div>
+    </header>
+    <article>
+        <div class="topGradient"></div>
+        <section id="titleActivitySection">
+            <div class="titleActivity">
+                <div>
+                    <div class="pageTitle">Deals</div>
+                    <div id="addItem"><span class="addSymbol">+</span> Add Deal</div>
+                </div>
+                <div>
+                   <div class="searchWrapper">
+                        <input type="text" placeholder="SEARCH" id="dealSearch"
+                            class="searchInput"> 
+                        <span id="searchIcon" class="searchIcon fa fa-search"></span> 
+                    </div>
+                    <div class="activeArchive">
+                        <span class="padding08 active">Active</span><span class="separator"></span>
+                        <span class="padding08">Archive</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="bottomGradient"></div>
+        <section id="dataSection">
+            <div class="dataDescription">
+                <span>*</span><span>Data period is for the entire deal upto one year of data</span>
+            </div>
+            <div id="YuMetable">
+                    
+                <div class="title priority YuMeTable-cell">Priority</div>
+                <div class="title status YuMeTable-cell">Status</div>
+                <div class="title name YuMeTable-cell">Name</div>
+                <div class="title complete YuMeTable-cell">% Complete</div>
+            
+                <div class="title impressionsGoal YuMeTable-cell">% Impressions Goal</div>
+                <div class="title revenue YuMeTable-cell">Revenue</div>
+                <div class="title impressions YuMeTable-cell">Impressions</div>
+                <div class="title fillRate YuMeTable-cell">Fill Rate</div>
+            
+                <div class="title cpm YuMeTable-cell">Cpm</div>
+            
+            </div>
+        </section>
+    </article>
+</body>
+</html>
